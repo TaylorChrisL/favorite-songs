@@ -1,0 +1,32 @@
+### Songs Index
+
+GET http://localhost:3000/songs.json
+
+### Songs Show
+
+GET http://localhost:3000/songs/3.json
+
+### Songs Create
+
+POST http://localhost:3000/songs.json
+Content-Type: application/json
+
+{
+  "title": "Fake Song",
+  "album": "Fake Album",
+  "artist": "Fake Artist",
+  "year": "2"
+}
+
+### Songs Update
+
+PATCH http://localhost:3000/songs/3.json
+Content-Type: application/json
+
+{
+  "year": "12"
+}
+
+### Songs Delete
+
+DELETE http://localhost:3000/songs/11.json
